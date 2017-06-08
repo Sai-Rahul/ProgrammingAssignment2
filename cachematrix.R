@@ -5,7 +5,8 @@
 ## value.
 ## Use of camel case is deliberate, convention used in the sample is hard to read.
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix())
+ {
   memoizedInverse <- NULL
   
   # I got rid of the set function since the wrapping closure does the job just fine
@@ -20,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 # Actually computes the the inverse, using the memoized solution, if present
 # Tested with diagonal matrices and
-# m <- matrix (c(4, 2, 7, 6), 2, 2)
+# m <- matrix (c(8, 2, 3, 1), 2, 2)
 # x<-makeCacheMatrix(diag(3))
 # cacheSolve(x)
 cacheSolve <- function(x, ...) {
